@@ -1,0 +1,301 @@
+/* Playfair Display */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@700&display=swap");
+
+/* Roboto */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --main-color: #0008ff;
+  --main-font: "Playfair Display SC", serif;
+  --primary-font: "Roboto", sans-serif;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-family: var(--primary-font);
+  font-weight: bold;
+  background-color: #1c20ff18;
+  color: #000000c3;
+}
+
+i {
+  color: #0008ffdd;
+}
+
+.logo {
+
+  margin-left: 5rem;
+}
+
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 5rem;
+  /* ---  uncomment this code --- */
+  /* border: 2px solid #000; */
+}
+
+.burger span {
+  border: 2px solid var(--main-color);
+  width: 40px;
+  height: 1px;
+  margin: 2px;
+}
+
+/* header */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 90vh;
+}
+
+.main-headings {
+  font-size: 4rem;
+  font-family: var(--main-font);
+  transform: translateY(-40px);
+  color: #001effd5;
+  line-height: 4rem;
+}
+
+.main-headings span {
+  color: #000000da;
+}
+
+.primary-headings {
+  max-width: 500px;
+  font-family: var(--primary-font);
+  line-height: 25px;
+  margin-bottom: 1rem;
+  color: #373737e0;
+}
+
+
+
+
+
+
+
+.img-container {
+  border-radius: 50%;
+  box-shadow: 4px 7px 5px 2px #a0a0a0;
+}
+
+.header-img {
+  border-radius: 100%;
+  background: url(images/casual\ wear.jpg);
+  background-position: top;
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+}
+
+/* Section 1 */
+.section-one {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.img-container {
+  border-radius: 50%;
+  box-shadow: 4px 7px 5px 2px #bcbaba;
+  margin: 0;
+  padding: 0;
+}
+
+.section-one-img {
+  background: url(images/official.jpg);
+  background-position: top;
+  background-size: cover;
+}
+
+.primary-headings {
+  max-width: 500px;
+  font-family: var(--primary-font);
+  line-height: 25px;
+  margin-bottom: 1rem;
+  color: #595764;
+}
+
+/* Products */
+.products {
+  margin-top: 10rem;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.products-heading {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+.products .product-categories button {
+  margin-right: 20px;
+  margin-bottom: 2rem;
+}
+
+.products .product-items-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  max-width: 60rem;
+}
+
+.products .product-items-container .item {
+  margin: 20px;
+}
+
+.products .product-items-container .item-layer {
+  background: #ebf1f0;
+  padding: 40px;
+  margin-right: 20px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.products .product-items-container .item-layer img {
+  width: 150px;
+  height: 200px;
+}
+
+.products .product-items-container .item .item-name {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+}
+
+.products .product-items-container .item .item-price {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+}
+
+.products .product-items-container .item .view-product {
+  font-family: var(--primary-font);
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+}
+
+/* Customers */
+.customers-reviews {
+  margin-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.customer {
+  text-align: center;
+}
+
+.customers-heading {
+  font-family: var(--primary-font);
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-top: 10rem;
+}
+
+.customers-reviews .customer-description {
+  font-size: 12px;
+  margin-top: 20px;
+  max-width: 200px;
+  text-align: center;
+  margin: 10px;
+  font-family: var(--primary-font);
+}
+
+.customer .customer-img .img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.customer-img .img-one {
+  background: url(images/clint.jpg);
+}
+.customer-img .img-two {
+  background: url(images/clinet34.jpg);
+}
+.customer-img .img-three {
+  background: url(images/client1.jpg);
+}
+
+footer {
+  background: #000;
+  margin-top: 10rem;
+  color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  font-family: var(--primary-font);
+}
+
+footer .container .footer-heading {
+  margin-bottom: 3rem;
+}
+
+footer .container .footer-primary-heading {
+  font-weight: normal;
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+/* You can make it responsive for your own screen if you wanna to, but for now this is good enough. */
+@media only screen and (max-width: 900px) {
+  header {
+    height: 120vh;
+    text-align: center;
+  }
+
+  .section-one {
+    height: 120vh;
+    text-align: center;
+  }
+
+  .header-img {
+    width: 250px;
+    height: 250px;
+  }
+
+  .main-headings {
+    font-size: 3rem;
+  }
+
+  .primary-headings {
+    width: 400px;
+  }
+
+  .customer .customer-img .img {
+    width: 150px;
+    height: 150px;
+  }
+}
